@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0.33
+    container_name: mysql
+    environment:
+      MYSQL_DATABASE: product
+      MYSQL_USERNAME: root
+      MYSQL_PASSWORD: 952587587
+      MYSQL_ROOT_PASSWORD: 952587587
+    volumes:
+      - ./datas/mysql_data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+    networks:
+      - product-net
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./datas/redis_data:/data
+    networks:
+      - product-net
+
+volumes:
+  redis-data:
+    driver: local
+  mysql_data:
+    driver: local
+
+networks:
+  product-net:
