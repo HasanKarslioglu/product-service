@@ -10,7 +10,7 @@ data class Product(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0,
-    val name: String,
-    val price: Double,
-    val photoUri: String
+    var name: String,
+    var price: Double,
+    var photoUrl: String
 )
