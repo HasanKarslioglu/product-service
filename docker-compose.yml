@@ -26,6 +26,18 @@ services:
     networks:
       - product-net
 
+  product-app:
+    image: sonofcars/product-spring-app:v1.0.0
+    container_name: product-app
+    ports:
+      - "8090:8080"
+    networks:
+      - product-net
+    depends_on:
+      - mysql
+      - redis
+    restart: always
+
 volumes:
   redis-data:
     driver: local
