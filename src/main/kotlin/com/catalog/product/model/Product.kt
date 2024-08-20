@@ -4,6 +4,7 @@ import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
+import java.io.Serializable
 
 @Entity
 data class Product(
@@ -13,4 +14,4 @@ data class Product(
     var name: String,
     var price: Double,
     var photoUrl: String
-)
+) : Serializable
