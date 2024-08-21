@@ -27,12 +27,16 @@ services:
       - product-net
 
   product-app:
-    image: sonofcars/product-spring-app:v1.0.0
+    image: sonofcars/product-spring-app:v1.0.1
     container_name: product-app
     ports:
       - "8090:8080"
     networks:
       - product-net
+    environment:
+      AWS_ACCESS_KEY_ID: #your aws access key
+      AWS_SECRET_KEY: #your aws secret key
+      AWS_REGION: #your s3 bucket region
     depends_on:
       - mysql
       - redis
