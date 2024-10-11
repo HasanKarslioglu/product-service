@@ -34,11 +34,11 @@ Enjoy my Ever Never Best Wundebar Product-Service project!
 
 ## POSTMAN
 ![Postman](https://github.com/HasanKarslioglu/auth-service/blob/master/images/Postman.png?raw=true)
-![Postman](https://github.com/HasanKarslioglu/auth-service/blob/master/images/Postman2.png?raw=true)
+![Postman](https://github.com/HasanKarslioglu/product-service/blob/master/images/Postman2.png?raw=true)
 ## MYSQL
 ![Mysql](https://github.com/HasanKarslioglu/auth-service/blob/master/images/Mysql.png?raw=true)
 ## REDIS
 ![Redis](https://github.com/HasanKarslioglu/auth-service/blob/master/images/Redis.png?raw=true)
 ## AWS S3
-![AwsS3](https://github.com/HasanKarslioglu/auth-service/blob/master/images/S3.png?raw=true)
+![AwsS3](https://github.com/HasanKarslioglu/product-service/blob/master/images/S3.png?raw=true)
 
